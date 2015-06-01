@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/atmosphere_bg"
+    android:orientation="vertical">
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/layoutContainer" android:orientation="horizontal"
+    android:baselineAligned="false">
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.15"
+        tools:ignore="UselessLeaf">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.7">
+
+        <!-- This is the part that's 70% of the total width. I'm inserting a LinearLayout and buttons.-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_subtitle"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:text="@string/appname_spotify"
+                android:onClick="displayToast"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/appname_scores"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/appname_library"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/appname_bigger"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/appname_xyz"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:onClick="displayToast"
+                android:text="@string/appname_capstone"/>
+
+        </LinearLayout>
+        <!-- 70% Width End-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.15">
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
